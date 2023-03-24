@@ -156,11 +156,11 @@ int gpio_init()
     	/*
 	 * Enable GPIO pins
 	 */
-	if (-1 == GPIOExport(POUT) || -1 == GPIOExport(PIN))
-		std::cout<<"gpio_init_error1"<<std::endl;
+	//if (-1 == GPIOExport(POUT) || -1 == GPIOExport(PIN))
+	//	std::cout<<"gpio_init_error1"<<std::endl;
 		//return(1);
-	if (-1 == GPIOExport(POUT_1) || -1 == GPIOExport(PIN_1))
-		std::cout<<"gpio_init_error2"<<std::endl;
+	//if (-1 == GPIOExport(POUT_1) || -1 == GPIOExport(PIN_1))
+	//	std::cout<<"gpio_init_error2"<<std::endl;
 	
 	if (-1 == GPIOExport(POUT_2) || -1 == GPIOExport(PIN_2))
 		std::cout<<"gpio_init_error3"<<std::endl;	
@@ -169,12 +169,12 @@ int gpio_init()
 	/*
 	 * Set GPIO directions
 	 */
-	if (-1 == GPIODirection(POUT, OUT) || -1 == GPIODirection(PIN, IN))
+	//if (-1 == GPIODirection(POUT, OUT) || -1 == GPIODirection(PIN, IN))
 		std::cout<<"gpio_init_error3"<<std::endl;
 
 	//	return(2);
 
-	if (-1 == GPIODirection(POUT_1, OUT) || -1 == GPIODirection(PIN_1, IN))
+	//if (-1 == GPIODirection(POUT_1, OUT) || -1 == GPIODirection(PIN_1, IN))
 		std::cout<<"gpio_init_error4"<<std::endl;
 	
 	//return(2);
@@ -184,8 +184,8 @@ int gpio_init()
 
 		//return(2);
 		
-	GPIOWrite(POUT, 1);
-	GPIOWrite(POUT_1, 1);
+	//GPIOWrite(POUT, 1);
+	//GPIOWrite(POUT_1, 1);
 	GPIOWrite(POUT_2, 1);
 	std::cout<<"GPIO_INIT"<< std::endl;
 	//sleep(2);
@@ -193,14 +193,14 @@ int gpio_init()
 
 int set_gpio(char pin, char led_stat)
 {
-	if(pin==1)
-	{
-		GPIOWrite(POUT, led_stat);
-	}
-	if(pin==2)
-	{
-		GPIOWrite(POUT_1, led_stat);
-	}
+	//if(pin==1)
+	//{
+	//	GPIOWrite(POUT, led_stat);
+	//}
+	//if(pin==2)
+	//{
+	//	GPIOWrite(POUT_1, led_stat);
+	//}
 	if(pin==3)
 	{
 		GPIOWrite(POUT_2, led_stat);
