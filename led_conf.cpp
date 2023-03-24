@@ -23,7 +23,7 @@
 
 #define PIN  24 /* P1-18 */
 #define PIN_1  23 /* P1-18 */
-
+#define PIN_2 18
 
 #define POUT 4  /* P1-07 */
 #define POUT_1 17  /* P1-07 */
