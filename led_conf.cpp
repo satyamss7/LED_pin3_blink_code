@@ -170,12 +170,12 @@ int gpio_init()
 	 * Set GPIO directions
 	 */
 	//if (-1 == GPIODirection(POUT, OUT) || -1 == GPIODirection(PIN, IN))
-		std::cout<<"gpio_init_error3"<<std::endl;
+		//std::cout<<"gpio_init_error3"<<std::endl;
 
 	//	return(2);
 
 	//if (-1 == GPIODirection(POUT_1, OUT) || -1 == GPIODirection(PIN_1, IN))
-		std::cout<<"gpio_init_error4"<<std::endl;
+		//std::cout<<"gpio_init_error4"<<std::endl;
 	
 	//return(2);
 	
